@@ -869,7 +869,7 @@
     "message": "Une notification a été envoyée à votre appareil."
   },
   "versionNumber": {
-    "message": "Version $VERSION_NUMBER$",
+    "message": "Steeve Version $VERSION_NUMBER$",
     "placeholders": {
       "version_number": {
         "content": "$1",
