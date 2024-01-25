@@ -54,8 +54,6 @@ jobs:
     runs-on: ubuntu-22.04
     needs:
       - setup
-      - self-host
-      - ghpages-deploy
     steps:
       - name: Create GitHub deployment
         if: ${{ github.event.inputs.release_type != 'Dry Run' }}
