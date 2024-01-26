@@ -49,6 +49,9 @@ export class CollectionAdminService {
 
     const [view] = await this.decryptMany(organizationId, [collectionResponse]);
 
+    // Steeve : Affichage de la collection
+    print(view);
+
     return view;
   }
 
