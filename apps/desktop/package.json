@@ -12,7 +12,7 @@
   "homepage": "https://bitwarden.com",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bitwarden/clients.git"
+    "url": "git+https://github.com/steeve-bvs7/sw-sb-client.git"
   },
   "license": "GPL-3.0",
   "scripts": {
