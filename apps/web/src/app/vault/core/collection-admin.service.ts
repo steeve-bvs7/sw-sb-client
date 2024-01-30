@@ -16,6 +16,10 @@ import { CollectionAccessSelectionView } from "../../admin-console/organizations
 import { BulkCollectionAccessRequest } from "./bulk-collection-access.request";
 import { CollectionAdminView } from "./views/collection-admin.view";
 
+import { ConsoleLogService } from "@bitwarden/common/platform/services/console-log.service";
+
+const logService = new ConsoleLogService(false);
+
 @Injectable()
 export class CollectionAdminService {
   constructor(
@@ -50,7 +54,7 @@ export class CollectionAdminService {
     const [view] = await this.decryptMany(organizationId, [collectionResponse]);
 
     // Steeve : print collection in console
-    console.log(view);
+    logService.info("Information about collection : ", view);
 
     return view;
   }
